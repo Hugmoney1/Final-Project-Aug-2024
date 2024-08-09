@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the character encoding for the HTML document as UTF-8 -->
+    <meta charset="UTF-8">
+    
+    <!-- Ensures the webpage is responsive and adjusts to the width of the device's screen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Sets the title of the webpage displayed in the browser tab -->
+    <title>Alfred's Portfolio</title>
+    
+    <!-- Links an external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Links an external JavaScript file for adding interactive behavior -->
+    <script src="Javascript.js"></script>
+</head>
+<body>
+    <!-- Header section containing the navigation bar -->
+    <header>
+        <nav>
+            <!-- Div for the website's logo or brand name -->
+            <div class="logo">JuicyTech</div>
+            
+            <!-- Unordered list for navigation links -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+            
+            <!-- Button linking to an external Instagram page for contact -->
+            <button class="contact-btn"><a href="https://www.instagram.com/hugmoney/">Contact</a></button>
+        </nav>
+    </header>
+    
+    <!-- Main content section of the webpage -->
+    <main>
+        <!-- Introductory section with a welcome message -->
+        <section class="intro">
+            <div class="intro-text">
+                <!-- Main heading of the page -->
+                <h1>Great Web Design</h1>
+                
+                <!-- Subheading introducing the person behind the portfolio -->
+                <h2>Hello, I'm <span>Alfred</span></h2>
+                
+                <!-- Brief description of the services offered -->
+                <p>We create awesome design and strategize for achieving your needs in a clean and simple way to craft the user experience in Web Design and & more.</p>
+                
+                <!-- Div containing buttons for hiring and learning more about Alfred -->
+                <div class="intro-buttons">
+                    <!-- Button linking to a section for hiring services -->
+                    <a href="#hire-me" class="btn hire-me">Hire Me</a>
+                    
+                    <!-- Button linking to the About Me section with an added event listener -->
+                    <a href="#about-me" class="btn about-me" id="aboutMeButton">About Me</a>
+                </div>
+                
+                <!-- Inline JavaScript to handle the About Me button click event -->
+                <script>
+                document.getElementById('aboutMeButton').addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevents the default anchor link behavior
+                    alert('WEB DEVELOPER\nLIGHT TECH CODING HUB - Present \n Built web pages\n provide support and maintenance for existing websites');
+                });
+                </script>
+            </div>
+            
+            <!-- Div containing an image of Alfred -->
+            <div class="intro-image">
+                <!-- Image with a specified width and height -->
+                <img src="mypic.webp" alt="Alfred" style="width: 450px; height: 450px;">
+            </div>
+        </section>
+        
+        <!-- Section showcasing the services offered -->
+        <section class="st">
+            <div class="box" id="hire-me">
+                <!-- Heading for the services section -->
+                <h1><span>My </span>Services:</h1><br>
+                
+                <!-- Unordered list of services -->
+                <ul>
+                    <li>PERSONAL WEBSITE</li>
+                    <li>SCHOOL WEBSITE</li>
+                    <li>BUSINESS WEBSITE</li><br>
+                </ul>
+                
+                <!-- Button linking to a WhatsApp contact -->
+                <button class="btns"><a href="https://wa.me/message/FUZLDV7GVAYJO1">Contact</a></button>
+            </div>
+            
+            <!-- Section highlighting skills -->
+            <div class="box" id="about">
+                <h1>SKILL :</h1><br>
+                <ul>
+                    <li>JAVASCRIPT</li><br>
+                    <li>HTML</li><br>
+                    <li>CSS</li><br>
+                    <li>GIT</li><br>
+                </ul>
+            </div>
+            
+            <!-- Section displaying the portfolio information -->
+            <div class="box" id="portfolio">
+                <h1>Portfolio</h1><br>
+                <p>
+                   Hello! I’m Alfred, a passionate Web Developer with over 5 years of experience in creating dynamic and responsive websites. My expertise lies in HTML, CSS, and JavaScript, and I enjoy transforming ideas into reality through code.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
